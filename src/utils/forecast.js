@@ -1,7 +1,8 @@
 const axios =require('axios')
 
 const forecast = (latitude, longitude, callback) => {
-    const url = `http://api.weatherstack.com/forecast?access_key=${process.env.WEATHERSTACK_API_KEY}&query=${latitude},${longitude}`
+    // const url = `http://api.weatherstack.com/forecast?access_key=${process.env.WEATHERSTACK_API_KEY}&query=${latitude},${longitude}`
+    const url = `http://api.weatherstack.com/forecast?access_key=3d2ce162dc151be5645a4f260229d713&query=${latitude},${longitude}`
 
     axios.get(url)
         .then(response => {
